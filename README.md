@@ -1,6 +1,6 @@
 # COMP0090: Introduction to Deep Learning
 
-Theory-in-Action (TiA) activities for a theory-led deep learning module. The notebooks use small, self-contained experiments to connect mathematical claims to observable behaviour.
+Theory-in-Action (TiA) activities for COMP0090 module. The notebooks use small, self-contained experiments to connect mathematical claims to observable behaviour.
 
 ## Start here
 
@@ -8,8 +8,8 @@ Run the following commands from the repository root. Python 3.9–3.12 is suppor
 
 ```bash
 # Set up the environment once
-python -m venv .venv
-source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+python -m venv comp0090
+source comp0090/bin/activate
 python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 
@@ -22,11 +22,9 @@ Jupyter will open a file browser in your web browser. For example, select `tia_0
 For later study sessions, return to the repository root, reactivate the environment, and restart Jupyter:
 
 ```bash
-source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+source comp0090/bin/activate       # Windows PowerShell: .\comp0090\Scripts\Activate.ps1
 jupyter notebook
 ```
-
-Work through one TiA at a time: predict each result, run the cell, compare the outcome with your prediction, and answer the explanation prompts. The default activities are CPU-friendly, deterministic, and require no downloaded data, papers, model weights, or network access.
 
 New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cited by the activities, broader background, and selected modern examples are collected in the [Reading list](docs/reading.md).
 
@@ -40,5 +38,3 @@ New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cit
 | [4](tia_04_self_supervision/activity.ipynb) | Can useful representations emerge without labels? | Tiny contrastive learning, representation geometry, linear probes |
 | [5](tia_05_pretraining/activity.ipynb) | What does pretraining give us? | Frozen features, transfer, labelled-data efficiency, model scale |
 | [6](tia_06_diffusion/activity.ipynb) | How does a generative model turn noise into data? | Forward noise, scores, reverse diffusion, sampling trade-offs |
-
-Each notebook is self-contained. Papers are linked rather than distributed.

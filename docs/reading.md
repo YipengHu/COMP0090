@@ -1,7 +1,5 @@
 # Reading list
 
-This is a guided list, not a requirement to read every paper in full. For a TiA, first read the suggested sections or abstract, state the authors' main claim, and then ask which part of that claim the notebook can and cannot test. Links point to author, publisher, conference or arXiv pages; papers are not copied into this repository.
-
 ## Foundations and optimisation
 
 - Goodfellow, Bengio and Courville, [*Deep Learning*](https://www.deeplearningbook.org/), especially Chapters 6–8. A broad reference for networks, backpropagation, regularisation and optimisation.
