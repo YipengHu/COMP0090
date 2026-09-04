@@ -7,7 +7,7 @@ name = "comp0090-tia"
 version = "0.1.0"
 description = "Self-contained Theory-in-Action activities for COMP0090"
 requires-python = ">=3.9"
-dependencies = ["jupyterlab>=4.0", "matplotlib>=3.8", "nbclient>=0.10", "nbformat>=5.10", "numpy>=1.26,<2", "scikit-learn>=1.4", "scipy>=1.11", "torch>=2.2"]
+dependencies = ["notebook>=7.0,<8", "matplotlib>=3.8", "numpy>=1.26,<2", "scikit-learn>=1.4", "scipy>=1.11", "torch>=2.2"]
 
 [tool.setuptools.packages.find]
 include = ["comp0090*"]

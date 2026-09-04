@@ -2,19 +2,31 @@
 
 Theory-in-Action (TiA) activities for a theory-led deep learning module. The notebooks use small, self-contained experiments to connect mathematical claims to observable behaviour.
 
-## Setup
+## Start here
 
-Python 3.9–3.12 is supported.
+Run the following commands from the repository root. Python 3.9–3.12 is supported.
 
 ```bash
+# Set up the environment once
 python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
 python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -e .
-jupyter lab
+
+# Start Jupyter Notebook
+jupyter notebook
 ```
 
-Open the TiAs in numerical order and run each notebook from top to bottom. Work through one activity at a time: predict an outcome before running a cell, compare the result with the prediction, and answer the explanation prompts before moving on. The default path is CPU-friendly, deterministic, and requires no downloaded data, papers, model weights, or network access.
+Jupyter will open a file browser in your web browser. For example, select `tia_01_depth`, then open `activity.ipynb`. Run its cells from top to bottom before moving to `tia_02_generalisation`.
+
+For later study sessions, return to the repository root, reactivate the environment, and restart Jupyter:
+
+```bash
+source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+jupyter notebook
+```
+
+Work through one TiA at a time: predict each result, run the cell, compare the outcome with your prediction, and answer the explanation prompts. The default activities are CPU-friendly, deterministic, and require no downloaded data, papers, model weights, or network access.
 
 New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cited by the activities, broader background, and selected modern examples are collected in the [Reading list](docs/reading.md).
 

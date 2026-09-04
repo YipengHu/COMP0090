@@ -5,7 +5,7 @@ The TiAs use a deliberately small software stack. You do not need to master ever
 ## Core tools
 
 - **Python** — the programming language used throughout. Start with the [official Python tutorial](https://docs.python.org/3/tutorial/) and its section on [virtual environments and packages](https://docs.python.org/3/tutorial/venv.html).
-- **JupyterLab** — combines explanations, equations, code and results in one document. See [Project Jupyter's getting-started guide](https://docs.jupyter.org/en/latest/start/index.html) and the [JupyterLab user guide](https://jupyterlab.readthedocs.io/en/stable/user/interface.html).
+- **Jupyter Notebook** — combines explanations, equations, code and results in one document. See [Project Jupyter's getting-started guide](https://docs.jupyter.org/en/latest/start/index.html) and the [Notebook documentation](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html).
 - **NumPy** — transparent array operations and numerical linear algebra. Use the [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html) or the project's [curated learning resources](https://numpy.org/learn/).
 - **Matplotlib** — plots the quantities being investigated. Begin with the [Pyplot tutorial](https://matplotlib.org/stable/tutorials/pyplot.html) and browse the [official tutorials](https://matplotlib.org/stable/tutorials/index.html).
 - **SciPy** — supplies a small number of scientific-computing operations. The [SciPy user guide](https://docs.scipy.org/doc/scipy/tutorial/index.html) is the main reference.
