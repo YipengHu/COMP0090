@@ -1,68 +1,32 @@
 # COMP0090: Introduction to Deep Learning
-[UCL Module](https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-deep-learning/COMP0090) | [CS](https://www.ucl.ac.uk/computer-science/) | [UCL Moodle Page](https://moodle.ucl.ac.uk/course/view.php?id=1444)
->Term 1 (Autumn), Academic Year 2021-22 
 
+Theory-in-Action (TiA) activities for a theory-led deep learning module. The notebooks use small, self-contained experiments to connect mathematical claims to observable behaviour.
 
-**Module Lead**  
-Yipeng Hu <yipeng.hu@ucl.ac.uk>
+## Setup
 
-  
-|Tutors & TAs     | Email                       |
-|-----------------|-----------------------------|  
-|Dr Andre Altmann | a.altmann@ucl.ac.uk         |  
-|Dr Ziyi Shen     | ziyi-shen@ucl.ac.uk         |  
-|Ahmed Shahin     | ahmed.shahin.19@ucl.ac.uk   |  
-|Shaheer Saeed    | shaheer.saeed.17@ucl.ac.uk  |  
-|Kate Yiwen Li    | yiwen.li@st-annes.ox.ac.uk  |  
-|Sophie Martin    | s.martin.20@ucl.ac.uk       |  
-|Liam Chalcroft   | liam.chalcroft.20@ucl.ac.uk |  
-|Mark Pinnock     | mark.pinnock.18@ucl.ac.uk   |  
-|Iani Gayo        | iani.gayo.20@ucl.ac.uk      |  
-|Qi Li            | qi.li.21@ucl.ac.uk          |  
+Python 3.9–3.12 is supported.
 
-	
-## 1. Development environment
-The module tutorials (see bellow) and coursework use Python, NumPy and an option between TensorFlow and PyTorch. The [Development environment](docs/dev.md) document contains details of the supported development environment, though it is not mandatory.  
-
-
-## 2. Tutorials
-### Quick start
-To run the tutorial examples, follow the instruction below.
-
-First, set up the environment:
-``` bash
-conda create --name comp0090 tensorflow pytorch torchvision
-conda activate comp0090
-```
->Additional libraries required for individual tutorials are specified in the _readme_ file in each tutorial directory. 
-
->Scripts with "_tf" and "_pt" postfix are using TensorFlow 2 and PyTorch, respectively.
-
->All visual examples will be saved in files, without requiring graphics.
-
-Then, change directory `cd` to each individual tutorial folder and run individual training scripts, e.g.:
-``` bash
-python train_pt.py   
-```
-or 
-``` bash
-python train_tf.py  
+```bash
+python -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e .
+jupyter lab
 ```
 
-### Convolutional neural networks
-[Image classification](tutorials/img_cls)  
-[Image segmentation](tutorials/img_sgm)
+Open the TiAs in numerical order and run each notebook from top to bottom. Work through one activity at a time: predict an outcome before running a cell, compare the result with the prediction, and answer the explanation prompts before moving on. The default path is CPU-friendly, deterministic, and requires no downloaded data, papers, model weights, or network access.
 
-### Recurrent neural networks
-[Text classification](tutorials/txt_cls)  
-[Character generation](tutorials/char_gen)
+New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cited by the activities, broader background, and selected modern examples are collected in the [Reading list](docs/reading.md).
 
-### Variational autoencoder
-[MNIST generation](tutorials/mnist_vae)
+## Activities
 
-### Generative adversarial networks
-[Face image simulation](tutorials/face_gan)
+| TiA | Question | Main idea |
+|---|---|---|
+| [1](tia_01_depth/activity.ipynb) | Why are deep networks difficult to train? | Signal and gradient propagation, initialisation, residual paths |
+| [2](tia_02_generalisation/activity.ipynb) | How can a model both generalise and memorise? | Random labels, capacity, regularisation, distribution shift |
+| [3](tia_03_inductive_bias/activity.ipynb) | What does inductive bias buy us? | MLP/CNN comparison, translation, equivariance, mismatched bias |
+| [4](tia_04_self_supervision/activity.ipynb) | Can useful representations emerge without labels? | Tiny contrastive learning, representation geometry, linear probes |
+| [5](tia_05_pretraining/activity.ipynb) | What does pretraining give us? | Frozen features, transfer, labelled-data efficiency, model scale |
+| [6](tia_06_diffusion/activity.ipynb) | How does a generative model turn noise into data? | Forward noise, scores, reverse diffusion, sampling trade-offs |
 
-
-## 3. Reading list
-A collection of books and research papers is provided in the [Reading List](docs/reading.md).
+Shared teaching utilities live in `comp0090/`; activity-specific reasoning remains visible in each notebook. Papers are linked rather than distributed.

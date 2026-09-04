@@ -1,59 +1,57 @@
-# Reading List
+# Reading list
 
-## The deep learning textbook
+This is a guided list, not a requirement to read every paper in full. For a TiA, first read the suggested sections or abstract, state the authors' main claim, and then ask which part of that claim the notebook can and cannot test. Links point to author, publisher, conference or arXiv pages; papers are not copied into this repository.
 
-[_Goodfellow, Ian. et al., (2016). Deep Learning. MIT press._](https://www.deeplearningbook.org/)
+## Foundations and optimisation
 
-This is the reference book for this module. The module will assume prior knowledge of basic machine learning, briefly covered in Part I of the book.  
+- Goodfellow, Bengio and Courville, [*Deep Learning*](https://www.deeplearningbook.org/), especially Chapters 6–8. A broad reference for networks, backpropagation, regularisation and optimisation.
+- Glorot and Bengio (2010), [Understanding the difficulty of training deep feedforward neural networks](https://proceedings.mlr.press/v9/glorot10a.html). Core reading for TiA 1.
+- He et al. (2015), [Delving Deep into Rectifiers](https://arxiv.org/abs/1502.01852). Variance-preserving initialisation for rectified networks.
+- He et al. (2016), [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385). Residual paths and deep optimisation; core reading for TiA 1.
+- Kingma and Ba (2015), [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980). A widely used adaptive optimiser.
 
-## Basic machine learning textbooks
-For the basic machine learning reference, with consistent mathematical notations to the _Deep Learning_ book.  
-[_Bishop, C.M., (2006). Pattern Recognition and Machine Learning. Springer_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+## Generalisation and regularisation
 
-Other useful books that are freely available include:  
-[_Hastie et al., The Elements of Statistical Learning. Springer_](https://web.stanford.edu/~hastie/Papers/ESLII.pdf) 
+- Zhang et al. (2017), [Understanding Deep Learning Requires Rethinking Generalization](https://openreview.net/forum?id=Sy8gdB9xx). Core reading for TiA 2.
+- Srivastava et al. (2014), [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://jmlr.org/papers/v15/srivastava14a.html).
+- Belkin et al. (2019), [Reconciling modern machine-learning practice and the classical bias–variance trade-off](https://www.pnas.org/doi/10.1073/pnas.1903070116). Double descent and interpolation.
+- Nakkiran et al. (2021), [Deep Double Descent](https://openreview.net/forum?id=B1g5sA4twr). Model, sample and epoch-wise double descent.
 
-[_MacKay, D., Information Theory, Inference, and Learning Algorithms._](http://www.inference.org.uk/mackay/itila/book.html)  
+## Architectures and inductive bias
 
-[_Barber, D., Bayesian Reasoning and Machine Learning. Cambridge University Press (2012)_](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/200620.pdf)
+- LeCun et al. (1998), [Gradient-Based Learning Applied to Document Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf). A foundational convolutional-network paper.
+- Bronstein et al. (2021), [Geometric Deep Learning](https://arxiv.org/abs/2104.13478). Symmetry, invariance and equivariance; core reading for TiA 3.
+- Vaswani et al. (2017), [Attention Is All You Need](https://arxiv.org/abs/1706.03762). The Transformer architecture.
+- Dosovitskiy et al. (2021), [An Image is Worth 16×16 Words](https://arxiv.org/abs/2010.11929). Vision Transformers and architectural bias.
 
+## Representations and self-supervision
 
-## Selected research papers and surveys
+- Chen et al. (2020), [A Simple Framework for Contrastive Learning of Visual Representations](https://proceedings.mlr.press/v119/chen20j.html). SimCLR; core reading for TiA 4.
+- Oord, Li and Vinyals (2018), [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748).
+- He et al. (2020), [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722).
+- Grill et al. (2020), [Bootstrap Your Own Latent](https://arxiv.org/abs/2006.07733). A non-contrastive self-supervised method.
 
-**The Deep Learning paper**
-[LeCun, Y., Bengio, Y. and Hinton, G., 2015. Deep learning. nature, 521(7553), pp.436-444.](https://www.nature.com/articles/nature14539)  
+## Pretraining, foundation models and adaptation
 
-**The CNN paper**
-[LeCun, Y., Haffner, P., Bottou, L. and Bengio, Y., 1999. Object recognition with gradient-based learning. In Shape, contour and grouping in computer vision (pp. 319-345). Springer, Berlin, Heidelberg.](http://yann.lecun.com/exdb/publis/pdf/lecun-99.pdf)
+- Yosinski et al. (2014), [How transferable are features in deep neural networks?](https://arxiv.org/abs/1411.1792). A direct foundation for TiA 5.
+- Kaplan et al. (2020), [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361).
+- Hoffmann et al. (2022), [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556). Shows why parameter count alone is not a sufficient notion of scale.
+- Radford et al. (2021), [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020). CLIP as a modern transfer-learning reference point.
+- Hu et al. (2022), [LoRA: Low-Rank Adaptation of Large Language Models](https://openreview.net/forum?id=nZeVKeeFYf9). Parameter-efficient adaptation.
 
-[Fukushima, K. and Miyake, S., 1982. Neocognitron: A self-organizing neural network model for a mechanism of visual pattern recognition. In Competition and cooperation in neural nets (pp. 267-285). Springer, Berlin, Heidelberg.](https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf)
+## Generative learning
 
-**The AlexNet paper**
-[Krizhevsky, A., Sutskever, I. and Hinton, G.E., 2012. Imagenet classification with deep convolutional neural networks. Advances in neural information processing systems, 25, pp.1097-1105.](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+- Kingma and Welling (2014), [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114).
+- Goodfellow et al. (2014), [Generative Adversarial Nets](https://papers.nips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html).
+- Ho, Jain and Abbeel (2020), [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239). Core reading for TiA 6.
+- Song et al. (2021), [Score-Based Generative Modeling through Stochastic Differential Equations](https://openreview.net/forum?id=PxTIG12RRHS). Connects scores, diffusion and reverse-time SDEs.
+- Lipman et al. (2023), [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747). Core bridge from TiA 6 to flows.
 
-**The ResNet paper**
-[He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+## Selected modern research examples
 
-**The Dropout paper**
-[Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. and Salakhutdinov, R., 2014. Dropout: a simple way to prevent neural networks from overfitting. The journal of machine learning research, 15(1), pp.1929-1958.](https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf?utm_campaign=buffer&utm_content=buffer79b43&utm_medium=social&utm_source=twitter.com)
+These are illustrative research directions, not a claim about a permanent leaderboard; “state of the art” changes quickly.
 
-**The BatchNorm paper**
-[Ioffe, S. and Szegedy, C., 2015, June. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In International conference on machine learning (pp. 448-456). PMLR.](https://arxiv.org/pdf/1502.03167.pdf)
-
-**The Adam paper**
-[Kingma, D.P. and Ba, J., 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.](https://arxiv.org/pdf/1412.6980.pdf)
-
-**The Attention paper**
-[Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, Ł. and Polosukhin, I., 2017. Attention is all you need. In Advances in neural information processing systems (pp. 5998-6008).](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
-
-**The Vision Transformer Paper**
-[Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S. and Uszkoreit, J., 2020. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.](https://arxiv.org/pdf/2010.11929.pdf)
-
-**The GANs paper**
-[Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A. and Bengio, Y., 2014. Generative adversarial nets. Advances in neural information processing systems, 27.](https://papers.nips.cc/paper/5423-ge...al-nets.pdf)
-
-**The DANN paper**
-[Ganin, Y., Ustinova, E., Ajakan, H., Germain, P., Larochelle, H., Laviolette, F., Marchand, M. and Lempitsky, V., 2016. Domain-adversarial training of neural networks. The journal of machine learning research, 17(1), pp.2096-2030.](https://www.jmlr.org/papers/volume17/15-239/15-239.pdf)  
-
-**The UNet paper**
-[Ronneberger, O., Fischer, P. and Brox, T., 2015, October. U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.](https://arxiv.org/pdf/1505.04597.pdf)
+- Peebles and Xie (2023), [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748). Diffusion Transformers (DiT).
+- Esser et al. (2024), [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206). A large-scale flow-based image model.
+- Oquab et al. (2024), [DINOv2: Learning Robust Visual Features without Supervision](https://arxiv.org/abs/2304.07193). Large-scale self-supervised visual representations.
+- Dubey et al. (2024), [The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783). An example of modern open foundation-model development and evaluation.
