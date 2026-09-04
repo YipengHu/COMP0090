@@ -1,15 +1,16 @@
 # COMP0090: Introduction to Deep Learning
 
-Theory-in-Action (TiA) activities for COMP0090 module. The notebooks use small, self-contained experiments to connect mathematical claims to observable behaviour.
+Theory-in-Action (TiA) activities for COMP0090 module. The notebooks use self-contained experiments to connect ideas to observable behaviour.
 
 ## Start here
 
-Run the following commands from the repository root. Python 3.9–3.12 is supported.
+Run the following commands from the repository root. Python 3.10–3.12 is recommended.
 
 ```bash
 # Set up the environment once
 python -m venv comp0090
 source comp0090/bin/activate
+python -m pip install --upgrade pip
 python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 
