@@ -11,7 +11,7 @@ Run the following commands from the repository root. Python 3.9–3.12 is suppor
 python -m venv .venv
 source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
 python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -e .
+python -m pip install -r requirements.txt
 
 # Start Jupyter Notebook
 jupyter notebook
@@ -41,4 +41,4 @@ New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cit
 | [5](tia_05_pretraining/activity.ipynb) | What does pretraining give us? | Frozen features, transfer, labelled-data efficiency, model scale |
 | [6](tia_06_diffusion/activity.ipynb) | How does a generative model turn noise into data? | Forward noise, scores, reverse diffusion, sampling trade-offs |
 
-Shared teaching utilities live in `comp0090/`; activity-specific reasoning remains visible in each notebook. Papers are linked rather than distributed.
+Each notebook is self-contained. Papers are linked rather than distributed.
