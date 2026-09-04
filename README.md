@@ -31,11 +31,11 @@ New to any of the software? See [Tools and tutorials](docs/tools.md). Papers cit
 
 ## Activities
 
-| TiA | Question | Main idea |
+| TiA | Title | Description |
 |---|---|---|
-| [1](tia_01_depth/activity.ipynb) | Why are deep networks difficult to train? | Signal and gradient propagation, initialisation, residual paths |
-| [2](tia_02_generalisation/activity.ipynb) | How can a model both generalise and memorise? | Random labels, capacity, regularisation, distribution shift |
-| [3](tia_03_inductive_bias/activity.ipynb) | What does inductive bias buy us? | MLP/CNN comparison, translation, equivariance, mismatched bias |
-| [4](tia_04_self_supervision/activity.ipynb) | Can useful representations emerge without labels? | Tiny contrastive learning, representation geometry, linear probes |
-| [5](tia_05_pretraining/activity.ipynb) | What does pretraining give us? | Frozen features, transfer, labelled-data efficiency, model scale |
-| [6](tia_06_diffusion/activity.ipynb) | How does a generative model turn noise into data? | Forward noise, scores, reverse diffusion, sampling trade-offs |
+| [1](tia_01_depth/activity.ipynb) | Training Deep Networks | Explore how initialisation and residual paths affect signals and gradients in deep networks. |
+| [2](tia_02_generalisation/activity.ipynb) | Generalisation vs Memorisation | Test how capacity, regularisation and distribution shift affect fitting and generalisation. |
+| [3](tia_03_inductive_bias/activity.ipynb) | Inductive Bias and Equivariance | Compare MLPs and CNNs to see how locality and equivariance shape sample efficiency. |
+| [4](tia_04_self_supervision/activity.ipynb) | Self-Supervised Representations | Examine how contrastive learning and augmentations shape representations without labels. |
+| [5](tia_05_pretraining/activity.ipynb) | Pretraining and Transfer | Measure how pretrained features and model scale affect transfer with limited labels. |
+| [6](tia_06_diffusion/activity.ipynb) | Diffusion from Noise to Data | Visualise forward noise, score functions and reverse diffusion sampling. |
