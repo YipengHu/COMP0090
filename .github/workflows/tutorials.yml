@@ -1,0 +1,32 @@
+name: Tutorial compatibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tutorials:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15, macos-15-intel]
+        python: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Set up as a student would
+        run: python setup_env.py
+      - name: Execute notebooks and scripts
+        run: .venv/bin/python scripts/validate_tutorials.py
+      - name: Record resolved packages
+        if: always()
+        run: .venv/bin/python -m pip freeze

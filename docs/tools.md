@@ -2,6 +2,8 @@
 
 The TiAs use a deliberately small software stack. You do not need to master every library before starting: follow the notebook explanations and consult these references when a construct is unfamiliar.
 
+For installation and common errors, start with [Setup and troubleshooting](setup.md). Activities 2 and 5 also include Python scripts: their guides introduce functions, command-line options and saved results. The other activities retain notebooks for equations and visual investigations.
+
 ## Core tools
 
 - **Python** — the programming language used throughout. Start with the [official Python tutorial](https://docs.python.org/3/tutorial/) and its section on [virtual environments and packages](https://docs.python.org/3/tutorial/venv.html).
