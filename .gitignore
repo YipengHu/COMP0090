@@ -1,0 +1,7 @@
+comp0090/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+outputs/
+.DS_Store

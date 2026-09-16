@@ -1,5 +1,14 @@
-notebook>=7,<8
-numpy>=1.26,<2
-matplotlib>=3.8
-scikit-learn>=1.4
-torch>=2.2
+# Course versions. Use setup_env.py to select CPU wheels on Linux.
+# NumPy 1.x also supports the last official PyTorch build for Intel Macs.
+notebook==7.5.7
+ipykernel==6.31.0
+nbclient==0.10.2
+nbformat==5.10.4
+packaging==26.3
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.4
+scikit-learn==1.6.1
+threadpoolctl==3.6.0
+torch==2.2.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+torch==2.8.0 ; sys_platform != "darwin" or platform_machine != "x86_64"
